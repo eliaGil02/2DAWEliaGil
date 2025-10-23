@@ -1,0 +1,76 @@
+body {
+    font-family: Georgia, serif;
+    /* Arial es mas moderno y minimalista, mientras que Georgia es es más clásico*/
+    background-color: #f4f6f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #0d47a1;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.subtitulo {
+    font-style: italic;
+    color: #bbdefb;
+}
+
+/*contenido principal*/
+main {
+    padding: 1rem 2rem;
+}
+
+main h2 {
+    color: #1565c0;
+    border-bottom: 2px solid #1565c0;
+}
+
+/*listas*/
+ul {
+    list-style-type: circle;
+}
+
+li {
+    margin: 0.5rem 0;
+}
+
+footer {
+    text-align: center;
+    background-color: #e3f2fd;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+
+/* botón */
+.boton {
+    display: inline-block;
+    background-color: #1565c0;
+    color: white;
+    padding: 0.7rem 1.2rem;
+    margin: 1rem 0;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s;
+}
+
+.boton:hover {
+    background-color: #0d47a1;
+}
+
+/*tarjeta*/
+.tarjeta {
+    border: 1px solid #302c2c;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 0.8rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
