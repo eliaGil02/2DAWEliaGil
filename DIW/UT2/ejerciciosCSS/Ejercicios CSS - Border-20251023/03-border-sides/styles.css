@@ -1,0 +1,16 @@
+.striped,
+.callout {
+    padding: 16px;
+    margin: 12px 0;
+    background: #fff;
+}
+
+/* borde inferior */
+.striped {
+    border-bottom: 4px solid #3b82f6;
+}
+
+/* Borde izquierdo */
+.callout {
+    border-left: 6px solid #f59e0b;
+}

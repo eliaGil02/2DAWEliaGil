@@ -1,0 +1,22 @@
+.box {
+    width: 140px;
+    height: 60px;
+    display: grid;
+    place-items: center;
+    margin: 10px 0;
+}
+
+/* borde sólido azul */
+.box.one {
+    border: 3px solid #3b82f6;
+}
+
+/* borde dashed verde */
+.box.two {
+    border: 4px dashed #10b981;
+}
+
+/* borde dotted naranja */
+.box.three {
+    border: 5px dotted #f59e0b;
+}

@@ -1,0 +1,30 @@
+.card {
+    width: 140px;
+    height: 70px;
+    display: grid;
+    place-items: center;
+    margin: 12px 0;
+    background: #f9fafb;
+}
+
+/* borde sólido, color azul, grosor 3px */
+.card.a {
+    border-style: solid;
+    border-width: 3px;
+    border-color: #3b82f6;
+}
+
+/* borde discontinuo, color verde, grosor 4px */
+.card.b {
+    border-style: dashed;
+    border-width: 4px;
+    border-color: #10b981;
+}
+
+/* borde punteado, color rojo, grosor 5px */
+.card.c {
+    border-style: dotted;
+    border-width: 5px;
+    border-color: #ef4444;
+    /* rojo */
+}
