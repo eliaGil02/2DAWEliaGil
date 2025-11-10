@@ -1,0 +1,20 @@
+/* Reglas:
+   - .card a (descendant): azul
+   - .card > a (child): verde
+   - .card h3 ~ p (general sibling): gris
+*/
+
+/* enlace dentro de .card */
+.card a {
+   color: blue;
+}
+
+/* enlaces que sean hijos directos de .card */
+.card>a {
+   color: green;
+}
+
+/* los <p> que sigan a un <h3> dentro de .card */
+.card h3~p {
+   color: gray;
+}

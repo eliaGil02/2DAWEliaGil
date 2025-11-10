@@ -1,0 +1,17 @@
+.menu {
+    list-style: none;
+    padding: 0;
+}
+
+/* enlaces del nivel superior */
+.menu>li>a {
+    font-weight: bold;
+    color: #1e3a8a;
+}
+
+/* enlaces del submenú */
+.menu ul li a {
+    color: #2563eb;
+    padding-left: 15px;
+    font-style: italic;
+}

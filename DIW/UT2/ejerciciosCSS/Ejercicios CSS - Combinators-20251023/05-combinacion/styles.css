@@ -1,0 +1,16 @@
+/* Reglas:
+   1) article p -> borde 1px #ddd
+   2) article > p -> color rojo
+   3) h2 + p -> fondo amarillo
+*/
+article p {
+   border: 1px solid #ddd;
+}
+
+article>p {
+   color: red;
+}
+
+h2+p {
+   background: yellow;
+}

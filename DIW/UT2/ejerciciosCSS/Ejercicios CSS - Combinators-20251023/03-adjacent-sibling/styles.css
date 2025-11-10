@@ -1,0 +1,5 @@
+/* Objetivo: el primer p tras un h2 debe ser verde y en negrita */
+h2+p {
+    color: green;
+    font-weight: bold;
+}
