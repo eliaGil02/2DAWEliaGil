@@ -1,0 +1,110 @@
+:root {
+  --text: #111827;
+  --muted: #6b7280;
+  --border: #e5e7eb;
+  --accent: #2563eb;
+  --bg: #ffffff;
+  --surface: #f9fafb;
+}
+
+* {
+  box-sizing: border-box
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, Segoe UI, Roboto, Arial, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.55
+}
+
+main {
+  max-width: 880px;
+  margin: auto;
+  padding: clamp(1rem, 3vw, 2rem)
+}
+
+h1 {
+  margin: .5rem 0 1rem
+}
+
+section {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: .75rem;
+  padding: 1rem;
+  margin: .75rem 0
+}
+
+.item {
+  padding: .5rem .75rem;
+  border-radius: .5rem
+}
+
+.item:nth-child(odd) {
+  background: #fff
+}
+
+code,
+kbd {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  background: #eef2ff;
+  border: 1px solid #dbeafe;
+  border-radius: .375rem;
+  padding: .05rem .3rem
+}
+
+/* TODO: completa los estilos específicos de cada ejercicio */
+
+.steps {
+  counter-reset: step;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: .75rem;
+}
+
+.step {
+  position: relative;
+  padding: .75rem .75rem .75rem 3rem;
+  border: 1px solid var(--border);
+  border-radius: .75rem;
+  background: #fff;
+  color: var(--text);
+}
+
+.step::before {
+  counter-increment: step;
+  content: counter(step);
+  position: absolute;
+  left: .75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  inline-size: 2rem;
+  block-size: 2rem;
+  display: grid;
+  place-items: center;
+  border-radius: 999px;
+  border: 2px solid var(--accent);
+  color: var(--accent);
+  font-weight: 700;
+  line-height: 1;
+  background: transparent;
+}
+
+.step.current {
+  border-color: var(--accent);
+  background: #eef2ff;
+  font-weight: 600;
+}
+
+.step.current::before {
+  background: var(--accent);
+  color: #fff;
+}
+
+@media (max-width: 420px) {
+  .steps {
+    grid-template-columns: 1fr;
+  }
+}

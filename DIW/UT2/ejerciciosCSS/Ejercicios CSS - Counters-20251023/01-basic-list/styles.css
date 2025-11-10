@@ -1,0 +1,80 @@
+:root {
+  --text: #111827;
+  --muted: #6b7280;
+  --border: #e5e7eb;
+  --accent: #2563eb;
+  --bg: #ffffff;
+  --surface: #f9fafb;
+}
+
+* {
+  box-sizing: border-box
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, Segoe UI, Roboto, Arial, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.55
+}
+
+main {
+  max-width: 880px;
+  margin: auto;
+  padding: clamp(1rem, 3vw, 2rem)
+}
+
+h1 {
+  margin: .5rem 0 1rem
+}
+
+section {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: .75rem;
+  padding: 1rem;
+  margin: .75rem 0
+}
+
+.item {
+  padding: .5rem .75rem;
+  border-radius: .5rem
+}
+
+.item:nth-child(odd) {
+  background: #fff
+}
+
+code,
+kbd {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  background: #eef2ff;
+  border: 1px solid #dbeafe;
+  border-radius: .375rem;
+  padding: .05rem .3rem
+}
+
+/* TODO: completa los estilos específicos de cada ejercicio */
+
+.list {
+  counter-reset: items;
+}
+
+.item {
+  position: relative;
+  padding-left: 2.5rem;
+}
+
+.item::before {
+  counter-increment: items;
+  content: counter(items) ". ";
+
+  position: absolute;
+  left: .75rem;
+  top: 50%;
+  transform: translateY(-50%);
+
+  font-weight: bold;
+  color: var(--accent);
+}
