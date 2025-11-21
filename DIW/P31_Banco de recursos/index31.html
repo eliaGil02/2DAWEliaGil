@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Práctica 1 - Banco de recursos e imágenes para la Web</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style31.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <!-- TODO: insertar logo SVG -->
+    <div class="logo">
+      <img src="img/logo.svg" alt="Logotipo del sitio" />
+      <h1>Galería RA3</h1>
+    </div>
+    <p class="subtitle">Práctica 1: Imágenes optimizadas para la web</p>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h2>Introducción</h2>
+      <p>
+        En esta práctica, trabajarás con imágenes optimizadas y un logotipo SVG.
+        Completa la investigación de licencias y prepara tus recursos.
+      </p>
+    </section>
+
+    <section class="licencias">
+      <h2>Investigación de licencias</h2>
+      <p>Una licencia indica las condiciones para usar un recurso, como si se puede descargar, compartir o modificar,
+        entre otras opciones. Sirve para que los autores digan qué permiten hacer con su trabajo y para que los usuarios
+        sepan cómo pueden usarlo sin problemas.</p>
+
+      <p>La diferencia principal entre Copyright y Creative Commons es que el Copyright no permite usar un recurso sin
+        permiso del autor. En cambio, las licencias Creative Commons son más flexibles y tienen distintos niveles de
+        libertad, permitiendo compartir, modificar o usar el contenido de forma más abierta según la licencia concreta.
+      </p>
+
+      <h3>Bancos de recursos libres</h3>
+      <table>
+        <tr>
+          <th>Banco de recursos</th>
+          <th>Tipo de licencia</th>
+        </tr>
+        <tr>
+          <td>Pexels</td>
+          <td>Licencia Pexels (parecido a CC0)</td>
+        </tr>
+        <tr>
+          <td>Pixabay</td>
+          <td>Pixabay License (uso libre)</td>
+        </tr>
+        <tr>
+          <td>Unsplash</td>
+          <td>Unsplash License (uso libre)</td>
+        </tr>
+      </table>
+    </section>
+
+    <section class="formatos">
+      <h2>Formatos de imagen para la web</h2>
+
+      <p>En la web se usan varios formatos de imagen, y cada uno tiene sus ventajas. Esta tabla resume sus
+        características para ayudar a elegir el formato adecuado según el tipo de imagen y el uso que se le quiera dar.
+      </p>
+
+      <table>
+        <tr>
+          <th>Formato</th>
+          <th>Peso medio</th>
+          <th>Transparencia</th>
+          <th>Escalabilidad</th>
+          <th>Uso recomendado</th>
+        </tr>
+
+        <tr>
+          <td>JPG</td>
+          <td>Bajo</td>
+          <td>No</td>
+          <td>No</td>
+          <td>Fotos del día a día</td>
+        </tr>
+
+        <tr>
+          <td>PNG</td>
+          <td>Medio/alto</td>
+          <td>Sí</td>
+          <td>No</td>
+          <td>Imágenes con fondo transparente</td>
+        </tr>
+
+        <tr>
+          <td>SVG</td>
+          <td>Muy bajo</td>
+          <td>Sí</td>
+          <td>Sí</td>
+          <td>Logos e iconos que deben verse bien en cualquier tamaño</td>
+        </tr>
+
+        <tr>
+          <td>WebP</td>
+          <td>Muy bajo</td>
+          <td>Sí</td>
+          <td>No</td>
+          <td>Imágenes pequeñas y optimizadas para cargar rápido</td>
+        </tr>
+      </table>
+    </section>
+
+    <section class="optimizacion">
+      <h2>Optimización de imágenes</h2>
+
+      <p>Se han seleccionado tres imágenes grandes y se han recortado y reducido para que pesen menos y carguen más
+        rápido en la web.</p>
+
+      <table>
+        <tr>
+          <th>Archivo</th>
+          <th>Tamaño original</th>
+          <th>Tamaño final</th>
+          <th>Peso original</th>
+          <th>Peso final</th>
+        </tr>
+
+        <tr>
+          <td>foto1 (reno)</td>
+          <td>3516 x 4395 px</td>
+          <td>1920 x 2880 px</td>
+          <td>1,1 MB</td>
+          <td>535,1 KB</td>
+        </tr>
+
+        <tr>
+          <td>foto2 (templo)</td>
+          <td>4641 x 6961 px</td>
+          <td>1920 x 2880 px</td>
+          <td>1,6 MB</td>
+          <td>912,9 KB</td>
+        </tr>
+
+        <tr>
+          <td>foto3 (perro)</td>
+          <td>3456 x 5184 px</td>
+          <td>1920 x 2880 px</td>
+          <td>2,51 MB</td>
+          <td>614,5 KB</td>
+        </tr>
+      </table>
+    </section>
+
+    <section class="gallery">
+      <h2>Galería de imágenes</h2>
+
+      <div class="gallery-grid">
+
+        <figure class="gallery-item">
+          <img src="img/foto1_70.jpg" alt="Reno caminando en la nieve">
+          <figcaption>Reno en la nieve (optimizada)</figcaption>
+        </figure>
+
+        <figure class="gallery-item">
+          <img src="img/foto2_70.jpg" alt="Templo asiático entre árboles">
+          <figcaption>Templo asiático (optimizada)</figcaption>
+        </figure>
+
+        <figure class="gallery-item">
+          <img src="img/foto3_70.jpg" alt="Montaña nevada con nubes">
+          <figcaption>Perro (optimizada)</figcaption>
+        </figure>
+
+      </div>
+    </section>
+
+    <section class="bibliografia">
+      <p>He consultado las siguientes páginas para la realización de la práctica:</p>
+
+      <p>
+        - Licencias y bancos de recursos:<br>
+        https://creativecommons.org, https://www.pexels.com, https://pixabay.com, https://unsplash.com,
+        https://commons.wikimedia.org
+        <br><br>
+
+        - Formatos de imagen y documentación web:<br>
+        https://developer.mozilla.org, https://www.w3.org, https://www.w3schools.com
+        <br><br>
+
+        - Optimización de imágenes:<br>
+        https://developers.google.com/web/, https://squoosh.app, https://tinypng.com
+        <br><br>
+
+        - Creación y edición de SVG:<br>
+        https://developer.mozilla.org/en-US/docs/Web/SVG, https://inkscape.org
+        <br><br>
+
+        - Diseño responsive:<br>
+        https://web.dev/responsive-web-design-basics/, https://css-tricks.com/snippets/css/complete-guide-grid/
+        <br><br>
+
+        Además, he utilizado GIMP y Canva como herramientas para recortar, redimensionar y optimizar las imágenes
+        utilizadas en la galería.
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Este sitio usa una licencia Creative Commons CC BY. Esto significa que cualquiera puede ver y usar mi trabajo
+      siempre que diga que soy el autor. He elegido esta licencia porque es sencilla y encaja bien en un proyecto
+      educativo.</p>
+
+  </footer>
+</body>
+
+</html>
