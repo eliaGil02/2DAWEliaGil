@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de productos</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <h1>CATÁLOGO DE PRODUCTOS</h1>
+    <button id="btnAgregar">Añadir producto</button>
+
+    <div id="contenedorFormulario" class="oculto">
+        <form id="formProducto">
+            <h2>Nuevo producto</h2>
+            <label>ID del producto</label>
+            <input type="text" id="idProducto">
+
+            <label>Nombre</label>
+            <input type="text" id="nombreProducto">
+
+            <label>Descripción</label>
+            <input type="text" id="descripcionProducto">
+
+            <label>Precio</label>
+            <input type="number" id="precioProducto">
+
+            <label>Imagen</label>
+            <input type="file" id="imagenProducto" accept="image/*">
+
+            <button type="submit">Crear producto</button>
+        </form>
+    </div>
+
+    <h2>Productos creados</h2>
+    <div id="catalogo"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
