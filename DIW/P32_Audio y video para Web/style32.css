@@ -1,0 +1,119 @@
+/* PRÁCTICA 2 STARTER: mejorar el layout y hacerlo responsive */
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: #e9f2f5;
+  color: #123;
+  line-height: 1.6;
+}
+
+.site-header {
+  padding: 1rem;
+  text-align: center;
+  background: #111;
+  color: #fff;
+}
+
+.layout {
+  padding: 1rem;
+  display: grid;
+  gap: 1.5rem;
+}
+
+.media-card {
+  margin-bottom: 1.5rem;
+  background: #ffffff;
+  padding: 1rem;
+  border-radius: 10px;
+  transition: background 0.25s ease;
+}
+
+.media-card:hover {
+  background: #dfeef2;
+}
+
+audio,
+video {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 10px;
+  outline: 2px solid #a4d0d6;
+}
+
+/* TODO: añadir estilos con flex o grid, efecto hover, dark/light mode, etc. */
+
+/* ------- Nota ------- */
+.note {
+  background: #d7eef4;
+  padding: 0.8rem;
+  border-radius: 6px;
+  border-left: 4px solid #04a5b0;
+  font-size: 0.9rem;
+}
+
+/* ------- Tablas ------- */
+.mini-tabla {
+  width: 100%;
+  margin-top: 1rem;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.mini-tabla th {
+  background: #046380;
+  color: white;
+  padding: 0.6rem;
+}
+
+.mini-tabla td {
+  padding: 0.5rem;
+  border-bottom: 1px solid #bcd4d9;
+}
+
+.mini-tabla tr:nth-child(odd) td {
+  background: #f2fafc;
+}
+
+/* ------- Modo oscuro automático ------- */
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #0e1a1d;
+    color: #e6f6f7;
+  }
+
+  .site-header {
+    background: #000;
+  }
+
+  .media-card {
+    background: #122428;
+  }
+
+  .media-card:hover {
+    background: #1a3a40;
+  }
+
+  .note {
+    background: #0f3036;
+    border-left-color: #05d0d0;
+    color: #bfeef2;
+  }
+
+  .mini-tabla th {
+    background: #035f65;
+  }
+
+  .mini-tabla td {
+    border-bottom: 1px solid #1f4044;
+  }
+
+  .mini-tabla tr:nth-child(odd) td {
+    background: #0d2a30;
+  }
+
+  audio,
+  video {
+    outline: 2px solid #065f6a;
+  }
+}

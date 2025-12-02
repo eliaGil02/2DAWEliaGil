@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Práctica 2 - Audio y Vídeo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style32.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <h1>Práctica 2 · Audio y Vídeo HTML5</h1>
+  </header>
+
+  <main class="layout">
+    <section class="media-card">
+      <h2>Audio de muestra</h2>
+      <!-- TODO: enlazar a vuestros archivos de audio -->
+      <audio controls>
+        <source src="media/audio-demo.mp3" type="audio/mpeg" />
+        <source src="media/audio-demo.ogg" type="audio/ogg" />
+        Tu navegador no soporta audio HTML5.
+      </audio>
+      <p class="note">
+        Importé el archivo original descargado desde Pixabay y lo incorporé a la pista de trabajo.
+        Recorté el inicio y el final para eliminar partes innecesarias y apliqué una normalización
+        para equilibrar el nivel de volumen. Finalmente exporté el audio en formatos MP3 y OGG.
+      </p>
+
+      <h3>Comparativa de tamaños</h3>
+      <table class="mini-tabla">
+        <thead>
+          <tr>
+            <th>Formato</th>
+            <th>Antes</th>
+            <th>Después</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>MP3</td>
+            <td>3,3 MB</td>
+            <td>611,1 kB</td>
+          </tr>
+          <tr>
+            <td>OGG</td>
+            <td> - </td>
+            <td>471,7 kB</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="media-card">
+      <h2>Vídeo de muestra</h2>
+      <!-- TODO: enlazar a vuestros archivos de vídeo -->
+      <video controls poster="img/poster-video.jpg">
+        <source src="media/video-demo.mp4" type="video/mp4" />
+        <source src="media/video-demo.webm" type="video/webm" />
+        Tu navegador no soporta vídeo HTML5.
+      </video>
+      <p class="note">
+        Importé el vídeo descargado desde Pixabay y lo arrastré a la pista principal para editarlo. Recorté los primeros
+        y últimos segundos, añadí un título inicial y apliqué fundido de entrada
+        y salida. Después exporté el resultado en los formatos MP4 y WebM para comparar
+        el tamaño final con respecto al vídeo original.
+      </p>
+
+      <h3>Comparativa de tamaños</h3>
+      <table class="mini-tabla">
+        <thead>
+          <tr>
+            <th>Formato</th>
+            <th>Antes</th>
+            <th>Después</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>MP4 (H.264)</td>
+            <td>125 MB</td>
+            <td>63,4 MB</td>
+          </tr>
+          <tr>
+            <td>WebM</td>
+            <td> - </td>
+            <td>216,9 MB</td>
+          </tr>
+        </tbody>
+      </table>
+
+    </section>
+    <section class="media-card">
+      <h2>Grabaciones de pantalla para las ediciones</h2>
+      <h3>Proceso de edición de audio (Audacity)</h3>
+      <video controls>
+        <source src="media/grabacionAudio.webm" type="video/webm">
+        Tu navegador no soporta vídeo HTML5.
+      </video>
+
+      <h3>Proceso de edición de vídeo (OpenShot/Shotcut)</h3>
+      <video controls>
+        <source src="media/grabacionVideo.webm" type="video/webm">
+        Tu navegador no soporta vídeo HTML5.
+      </video>
+    </section>
+
+  </main>
+</body>
+
+</html>
