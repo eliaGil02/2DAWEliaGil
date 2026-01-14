@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Práctica 3.3 - Animaciones simples</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style33.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <h1>Práctica 3.3 · Animaciones simples</h1>
+    <p class="subtitle">
+      GIF animado + animaciones básicas con CSS3
+    </p>
+  </header>
+
+  <main class="layout">
+    <!-- Sección GIF -->
+    <section class="card">
+      <h2>1. GIF animado</h2>
+      <p>
+        Crea un GIF animado a partir de varias imágenes fijas
+        y sustitúyelo en el siguiente bloque:
+      </p>
+      <div class="gif-wrapper">
+        <!-- TODO: sustituir ruta por el GIF creado -->
+        <img src="gif/mi-animacion.gif" alt="GIF de ejemplo" class="gif-image" />
+      </div>
+      <p class="note">
+        He descargado las imágenes desde Pexels y he creado el GIF utilizando una herramienta online.
+        El GIF está formado por 9 imágenes y he configurado un tiempo de 0,2 segundos por imagen,
+        por lo que la animación dura aproximadamente 1,8 segundos. El archivo final ocupa 9,95 MiB
+        y tiene un tamaño de 1920 × 1080 píxeles.
+      </p>
+    </section>
+
+    <!-- Sección animación hover botón -->
+    <section class="card">
+      <h2>2. Animación hover con CSS</h2>
+      <p>
+        Diseña un botón con una animación suave al pasar el ratón
+        (cambios de color, tamaño, posición, etc.).
+      </p>
+      <button class="btn-animado">
+        Pasa el ratón por aquí
+      </button>
+    </section>
+
+    <!-- Sección animación continua -->
+    <section class="card">
+      <h2>3. Animación continua con @keyframes</h2>
+      <p>
+        Crea una animación continua (por ejemplo un icono que late o una burbuja
+        que se desplaza) usando la propiedad <code>animation</code>.
+      </p>
+      <div class="anim-demo">
+        <div class="burbujita"></div>
+        <p class="note">
+          La burbujita debe moverse o cambiar de tamaño de forma infinita
+          mediante una animación CSS.
+        </p>
+      </div>
+    </section>
+
+    <!-- Sección animación CSS opcional -->
+    <section class="card">
+      <h2>Animación CSS similar a un GIF (opcional)</h2>
+      <p>
+        En este apartado se muestra una animación hecha solo con CSS,
+        que imita el efecto visual de un GIF animado.
+      </p>
+
+      <div class="anim-demo">
+        <div class="gif-falso">➡</div>
+        <p class="note">
+          El icono cambia ligeramente de tamaño y se mueve hacia arriba
+          y hacia abajo de forma continua.
+        </p>
+      </div>
+    </section>
+
+    <!-- Sección Comparativa GIF vs CSS -->
+    <section class="card">
+      <h2>Comparativa GIF vs CSS</h2>
+      <p class="note">
+        Usar un GIF animado es una buena opción cuando quiero mostrar una animación creada a partir
+        de varias imágenes, por ejemplo para enseñar algo de forma visual, sin que la persona que entra en la web tenga
+        que hacer nada. Los GIF son fáciles de usar y se ven igual en cualquier navegador,
+        aunque suelen ocupar bastante espacio.
+        Por otro lado, la animación CSS es más adecuada para elementos sencillos dentro de una página,
+        como botones, iconos o pequeños movimientos que acompañan al diseño.
+        Con CSS tengo más control sobre la animación, ya que puedo modificarla fácilmente desde el código
+        y adaptarla mejor al diseño de la web.
+        Además, las animaciones CSS suelen cargar más rápido, consumen menos recursos y son más cómodas
+        para personas que prefieren reducir las animaciones en la pantalla.
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>DAW · DIW · RA3 - Práctica 3.3 </p>
+  </footer>
+</body>
+
+</html>
